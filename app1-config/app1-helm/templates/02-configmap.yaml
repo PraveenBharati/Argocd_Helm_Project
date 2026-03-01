@@ -10,59 +10,74 @@ data:
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Praveen | Cloud & DevOps</title>
+      <title>ArgoCD GitOps Demo | Praveen Bharati</title>
 
       <style>
         body {
           margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-          background: linear-gradient(135deg, #141e30, #243b55);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
           height: 100vh;
-          text-align: center;
         }
 
         .container {
+          text-align: center;
           background: rgba(255,255,255,0.08);
-          padding: 40px;
-          border-radius: 12px;
-          box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-          backdrop-filter: blur(10px);
-          max-width: 700px;
+          padding: 50px;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+          backdrop-filter: blur(12px);
+          max-width: 800px;
         }
 
         h1 {
-          font-size: 42px;
-          color: #00ffd5;
+          font-size: 44px;
+          color: #ff7f50;
           margin-bottom: 10px;
         }
 
         h2 {
-          font-weight: normal;
-          color: #e0e0e0;
+          font-weight: 400;
+          color: #e6e6e6;
+          margin-top: 0;
         }
 
         p {
           font-size: 18px;
-          line-height: 1.6;
+          line-height: 1.7;
           margin-top: 20px;
         }
 
+        .section {
+          margin-top: 30px;
+        }
+
         .badge {
-          margin-top: 25px;
-          padding: 10px 20px;
-          background: #00ffd5;
-          color: #003333;
-          border-radius: 25px;
-          font-weight: bold;
           display: inline-block;
+          background: #ff7f50;
+          color: white;
+          padding: 10px 18px;
+          margin: 6px;
+          border-radius: 20px;
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+        .status {
+          margin-top: 30px;
+          padding: 15px;
+          background: #1abc9c;
+          border-radius: 10px;
+          font-weight: bold;
+          color: #002b2b;
         }
 
         footer {
-          margin-top: 30px;
+          margin-top: 35px;
           font-size: 14px;
           color: #cccccc;
         }
@@ -71,22 +86,41 @@ data:
 
     <body>
       <div class="container">
-        <h1>🚀 Praveen Bharati</h1>
-        <h2>Cloud | DevOps Engineer | Kubernetes Enthusiast</h2>
+
+        <h1>🚀 ArgoCD GitOps Platform</h1>
+        <h2>Continuous Delivery for Kubernetes</h2>
 
         <p>
-          This application is deployed using Kubernetes and managed through
-          modern DevOps practices including Docker, 
-          Helm charts, and ArgoCD GitOps workflows.
+          Welcome! This application demonstrates how ArgoCD enables
+          GitOps-based Continuous Delivery by synchronizing Kubernetes
+          cluster state with declarative configurations stored in Git.
         </p>
 
-        <div class="badge">
-          ✅ Successfully Deployed via Helm + ArgoCD
+        <div class="section">
+          <span class="badge">GitOps</span>
+          <span class="badge">ArgoCD</span>
+          <span class="badge">Helm</span>
+          <span class="badge">Kubernetes</span>
+          <span class="badge">CI/CD</span>
+          <span class="badge">AWS EKS</span>
+        </div>
+
+        <div class="section">
+          <p>
+            🔄 Any change pushed to Git automatically triggers deployment
+            updates via ArgoCD synchronization, ensuring the cluster
+            always matches the desired state.
+          </p>
+        </div>
+
+        <div class="status">
+          ✅ Application Successfully Deployed using ArgoCD GitOps Workflow
         </div>
 
         <footer>
-          Built with ❤️ using Kubernetes • AWS • DevOps
+          Presented by <b>Praveen Bharati</b> • DevOps & Cloud Engineer
         </footer>
+
       </div>
     </body>
     </html>
