@@ -5,114 +5,88 @@ metadata:
   namespace: {{ .Values.app.namespace }}
 data:
   index.html: |
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen | Cloud & DevOps</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Praveen | Cloud & DevOps</title>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #141e30, #243b55);
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background: linear-gradient(135deg, #141e30, #243b55);
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          text-align: center;
+        }
 
-      .container {
-        text-align: center;
-        background: rgba(255,255,255,0.08);
-        padding: 50px;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        backdrop-filter: blur(12px);
-        max-width: 750px;
-      }
+        .container {
+          background: rgba(255,255,255,0.08);
+          padding: 40px;
+          border-radius: 12px;
+          box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+          backdrop-filter: blur(10px);
+          max-width: 700px;
+        }
 
-      h1 {
-        font-size: 44px;
-        margin-bottom: 10px;
-        color: #00ffd5;
-      }
+        h1 {
+          font-size: 42px;
+          color: #00ffd5;
+          margin-bottom: 10px;
+        }
 
-      h2 {
-        font-weight: 400;
-        color: #e6e6e6;
-        margin-top: 0;
-      }
+        h2 {
+          font-weight: normal;
+          color: #e0e0e0;
+        }
 
-      p {
-        font-size: 18px;
-        line-height: 1.7;
-        margin-top: 25px;
-        color: #f1f1f1;
-      }
+        p {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-top: 20px;
+        }
 
-      .tech {
-        margin-top: 25px;
-      }
+        .badge {
+          margin-top: 25px;
+          padding: 10px 20px;
+          background: #00ffd5;
+          color: #003333;
+          border-radius: 25px;
+          font-weight: bold;
+          display: inline-block;
+        }
 
-      .badge {
-        display: inline-block;
-        background: #00ffd5;
-        color: #003333;
-        padding: 10px 18px;
-        margin: 6px;
-        border-radius: 20px;
-        font-weight: bold;
-        font-size: 14px;
-      }
+        footer {
+          margin-top: 30px;
+          font-size: 14px;
+          color: #cccccc;
+        }
+      </style>
+    </head>
 
-      .status {
-        margin-top: 30px;
-        padding: 12px;
-        background: #1abc9c;
-        color: #002b2b;
-        border-radius: 8px;
-        font-weight: bold;
-      }
+    <body>
+      <div class="container">
+        <h1>🚀 Praveen Bharati</h1>
+        <h2>Cloud | DevOps Engineer | Kubernetes Enthusiast</h2>
 
-      footer {
-        margin-top: 35px;
-        font-size: 14px;
-        color: #cccccc;
-      }
-    </style>
-  </head>
+        <p>
+          This application is deployed using Kubernetes and managed through
+          modern DevOps practices including Docker, CI/CD pipelines,
+          Helm charts, and ArgoCD GitOps workflows.
+        </p>
 
-  <body>
-    <div class="container">
-      <h1>🚀 Praveen Bharati</h1>
-      <h2>Cloud | DevOps Engineer | Kubernetes Enthusiast</h2>
+        <div class="badge">
+          ✅ Successfully Deployed via Helm + ArgoCD
+        </div>
 
-      <p>
-        Welcome! This application is deployed using modern DevOps practices.
-        The infrastructure and deployment pipeline demonstrate hands-on
-        experience with containerization, Kubernetes orchestration,
-        CI/CD automation, and GitOps workflows.
-      </p>
-
-      <div class="tech">
-        <span class="badge">Docker</span>
-        <span class="badge">Kubernetes</span>
-        <span class="badge">AWS EKS</span>
-        <span class="badge">Terraform</span>
-        <span class="badge">ArgoCD</span>
-        <span class="badge">CI/CD</span>
+        <footer>
+          Built with ❤️ using Kubernetes • AWS • DevOps
+        </footer>
       </div>
-
-      <div class="status">
-        ✅ Application Successfully Deployed via Kubernetes ConfigMap
-      </div>
-
-      <footer>
-        <p>Built & Managed by Praveen • Powered by Cloud & DevOps 🚀</p>
-      </footer>
-    </div>
-  </body>
-  </html>
+    </body>
+    </html>
