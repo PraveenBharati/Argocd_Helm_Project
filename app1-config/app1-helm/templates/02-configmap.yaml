@@ -76,7 +76,7 @@ data:
 
         <p>
           This application is deployed using Kubernetes and managed through
-          modern DevOps practices including Docker, CI/CD pipelines,
+          modern DevOps practices including Docker, 
           Helm charts, and ArgoCD GitOps workflows.
         </p>
 
