@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/CloudWithVarJosh/app1-config.git
+    repoURL: https://github.com/PraveenBharati/Argocd_Helm_Project.git
     targetRevision: HEAD
-    path: app1-helm
+    path: app1-config/app1-helm
     helm:
       releaseName: app1
   destination:
